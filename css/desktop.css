@@ -71,3 +71,18 @@ header nav ul li h1{
 	left:120px;
 	font-size: 8em;
 }
+.logo {
+	padding: 5px 0px;
+	flex-basis: 85%;
+   }
+   .loginLinks {
+	flex-basis: 15%;
+   }
+   .search {
+	padding: 5px 0;
+	flex-basis: 40%;
+   }
+   header {
+	justify-content: flex-end;
+	padding: 0 0 0 5px;
+   }

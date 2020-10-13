@@ -1,6 +1,10 @@
 
 *{box-sizing: border-box;}
 body 
+header {
+    display: flex;
+    flex-wrap: wrap;
+   }
 {
     font-family: "Open Sans", helvetica, arial, sans-serif;
     margin: 0;
@@ -61,9 +65,43 @@ body
         width: 24px;
         height: 4px;
         margin: 6px 0;
-        background-color: #000;
-       }
+        background-color: #000;}
       
-
-
+        .search > form {
+            display: flex;
+           }
+    input[type="search"] {
+            flex-basis: 80%;
+            padding: 12px 5px;
+            border: 1px solid #ccc;
+            border-right: none;
+            -webkit-appearance: none;
+           }
+    button[type="submit"] {
+            flex-basis: 20%;
+            background-color: #4caf50;
+            border: none;
+            color: #fff;
+           }
+          
+    .logo img {
+        max-width: 400px;
+        padding: 5px;
+        }
+    .loginLinks {
+        /* Don't set flex-basis as wrap will overrule it just stop grow and shrink */
+        flex: 0;
+       }
+    .burgerMenu {
+        /* Don't set flex-basis as wrap will overrule it just stop grow and shrink*/
+        flex: 0;
+        padding: 13px 11px 0 11px;
+       }
+    .logo {
+        /* Don't set flex-basis as wrap will overrule it just set to grow and shrink */
+        flex: 1;
+       }
+       .search {
+        flex-basis: 100%;
+       }
 
